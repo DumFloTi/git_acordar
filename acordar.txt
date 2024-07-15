@@ -1,0 +1,67 @@
+programa
+{
+    // Declaração de variáveis
+    inteiro horarioDespertar, horarioAtual
+    booleano estaChovendo, precisaTrabalhar
+
+    // Início do programa
+    inicio
+    {
+        // Configurar o horário de despertar
+        horarioDespertar = 7
+
+        // Simular o horário atual
+        escreva("Horário atual: 8")
+        leia(horarioAtual)
+
+        // Verificar se já é hora de acordar
+        se (horarioAtual >= horarioDespertar) entao
+        {
+            // Acordar
+            escreva("Acordar.")
+
+            // Verificar o clima
+            escreva("Está chovendo?: true")
+            leia(estaChovendo)
+
+            // Levantar da cama
+            escreva("Levantar da cama.")
+
+            // Fazer higiene pessoal
+            escreva("Ir ao banheiro e escovar os dentes.")
+
+                // Se está chovendo, pegar um guarda-chuva
+                se (estaChovendo == true) entao
+                {
+                    escreva("Pegar um guarda-chuva.")
+                }
+                senao
+                {
+                    escreva("Pegar oculos de sol.")
+                }
+
+            // Tomar café da manhã
+            escreva("Tomar café da manhã.")
+
+            // Verificar se precisa ir trabalhar
+            escreva("Você precisa trabalhar hoje?: true")
+            leia(precisaTrabalhar)
+
+                se (precisaTrabalhar) entao
+                {
+                    // Ir trabalhar
+                    escreva("Ir trabalhar.")
+                }
+                senao
+                {
+                    // Fazer outras atividades
+                    escreva("Realizar outras atividades.")
+                }
+        }
+        senao
+        {
+            // Ainda é cedo para acordar
+            escreva("Ainda é cedo para acordar, vou dormir mais um pouco.")
+        }
+    }
+}
